@@ -23,7 +23,7 @@ class Sha256Class : public Print
     void initHmac(const uint8_t* secret, int secretLength);
     uint8_t* result(void);
     uint8_t* resultHmac(void);
-    virtual void write(uint8_t);
+    size_t void write(uint8_t);
     using Print::write;
   private:
     void pad();
